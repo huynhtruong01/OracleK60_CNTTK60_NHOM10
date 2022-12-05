@@ -1,0 +1,26 @@
+.stories-news__left-item:not(:last-child) {
+    margin-bottom: 20px;
+    padding: 16px 0;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.stories-news__left-item h3 {
+    margin-bottom: 12px;
+}
+
+.stories-news__left-item .content {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 12px;
+}
+
+.stories-news__left-item .content .img {
+    min-width: 145px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.stories-news__left-item .content .desc {
+    font-size: 14px;
+    color: #474e68;
+}

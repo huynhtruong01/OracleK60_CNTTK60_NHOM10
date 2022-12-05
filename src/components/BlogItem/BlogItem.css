@@ -1,0 +1,21 @@
+.blog-item {
+    margin-bottom: 20px;
+}
+
+.blog-item__img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-item__title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.blog-item__description {
+    font-size: 14px;
+    line-height: 140%;
+}

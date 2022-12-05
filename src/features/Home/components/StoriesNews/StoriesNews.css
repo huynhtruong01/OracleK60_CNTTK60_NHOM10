@@ -1,0 +1,24 @@
+.stories-news {
+    padding: 24px 0;
+}
+
+.stories-news h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #393e46;
+}
+
+.stories-news__content {
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
+.stories-news__left {
+    padding-right: 20px;
+    border-right: 2px solid #e5e5e5;
+}
+
+.stories-news__right {
+    padding-left: 20px;
+}

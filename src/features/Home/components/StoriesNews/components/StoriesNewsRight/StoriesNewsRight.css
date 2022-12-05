@@ -1,0 +1,31 @@
+.stories-news__right-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.stories-news__right-item {
+    width: calc(100% / 2 - 12px);
+}
+
+.stories-news__right-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.stories-news__right-item .img {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.stories-news__right-item .content {
+    padding: 2px 8px;
+}
+
+.stories-news__right-item .title {
+    margin-bottom: 4px;
+}
+
+.stories-news__right-item .desc {
+    color: #474e68;
+}
