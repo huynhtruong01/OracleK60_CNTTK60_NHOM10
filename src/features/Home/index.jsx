@@ -7,7 +7,6 @@ Home.propTypes = {}
 function Home(props) {
     return (
         <div>
-            <Nav />
             <Main />
         </div>
     )

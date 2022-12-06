@@ -1,70 +1,60 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Nav.css'
 
 Nav.propTypes = {}
 
 function Nav() {
+    const navList = [
+        {
+            name: 'Thời sự',
+            link: 'thoi-su',
+        },
+        {
+            name: 'Góc nhìn',
+            link: 'goc-nhin',
+        },
+        {
+            name: 'Thế giới',
+            link: 'the-gioi',
+        },
+        {
+            name: 'Video',
+            link: 'video',
+        },
+        {
+            name: 'Podcasts',
+            link: 'podcasts',
+        },
+        {
+            name: 'Kinh doanh',
+            link: 'kinh-doanh',
+        },
+        {
+            name: 'Khoa học',
+            link: 'khoa-hoc',
+        },
+        {
+            name: 'Giải trí',
+            link: 'giai-tri',
+        },
+    ]
+
     return (
         <section id="section" className="section-nav">
             <nav className="main-nav">
                 <ul className="nav-list">
                     <li className="nav-item nav__home">
-                        <a href="#">
+                        <Link to="">
                             <i class="fa-solid fa-house-chimney"></i>
-                        </a>
+                        </Link>
                     </li>
-                    <li className="nav-item">
-                        <a href="">Thời sự</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Góc nhìn</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Thế giới</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Video</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Podcasts</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Kinh doanh</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Khoa học</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Giải trí</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Thể thao</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Pháp luật</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Giáo dục</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Sức khỏe</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Đời sống</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Du lịch</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Xe</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Tâm sự</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="">Hài</a>
-                    </li>
+                    {navList.map((nav) => (
+                        <li className="nav-item" key={nav.link}>
+                            <Link to={`/${nav.link}`}>{nav.name}</Link>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </section>

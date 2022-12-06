@@ -8,6 +8,11 @@
     margin-bottom: 12px;
 }
 
+.stories-news__left-item h3:hover a {
+    text-decoration: underline;
+    color: #0d4c92;
+}
+
 .stories-news__left-item .content {
     display: flex;
     align-items: flex-start;

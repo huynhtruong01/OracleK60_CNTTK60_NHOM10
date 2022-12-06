@@ -1,5 +1,7 @@
 .blog-item {
     margin-bottom: 20px;
+    background-color: #fff;
+    padding-bottom: 8px;
 }
 
 .blog-item__img {
@@ -9,13 +11,39 @@
     overflow: hidden;
 }
 
+.blog-item__content {
+    padding: 8px 16px;
+}
+
 .blog-item__title {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 6px;
 }
 
+.blog-item__title:hover a {
+    text-decoration: underline;
+    color: #0d4c92;
+}
+
 .blog-item__description {
     font-size: 14px;
     line-height: 140%;
+    margin-bottom: 12px;
+    color: #00000099;
+}
+
+.blog-item__times-category {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+    color: #393e46;
+}
+
+.category {
+    padding: 2px 8px;
+    background-color: #0d4c92;
+    color: #fff;
+    border-radius: 2px;
 }

@@ -1,0 +1,20 @@
+.detail-blog-main {
+}
+
+.detail-blog-main-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-weight: bold;
+    color: #393e46;
+}
+
+.detail-blog-main h1 {
+    margin-bottom: 16px;
+}
+
+.detail-blog-main p {
+    color: #222222;
+    letter-spacing: 1px;
+    line-height: 2;
+}

@@ -1,0 +1,15 @@
+.detail-blog {
+    padding: 30px 0;
+}
+
+.detail-blog__container {
+    display: grid;
+    grid-template-columns: 770px auto;
+    column-gap: 24px;
+}
+
+.detail-main {
+    padding: 40px 24px 24px;
+    background-color: #fff;
+    border-radius: 5px;
+}

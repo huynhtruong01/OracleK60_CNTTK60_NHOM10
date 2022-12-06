@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
 import React from 'react'
+import { formatFullTimes } from '../../utils/time'
 import './Header.css'
 
 Header.propTypes = {}
@@ -14,7 +14,7 @@ function Header() {
                         alt=""
                     />
                 </a>
-                <span className="header__time-now">Thứ ba, 29/11/2022</span>
+                <span className="header__time-now">{formatFullTimes(new Date())}</span>
                 <div className="header__right">
                     <div className="header__social-list">
                         <div className="header__social-item">

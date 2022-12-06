@@ -1,0 +1,11 @@
+.blog-list__container {
+    padding: 20px 0 50px;
+}
+
+.blog-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 12px 0;
+}

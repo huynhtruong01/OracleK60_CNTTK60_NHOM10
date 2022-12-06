@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import BlogList from '../../../../components/BlogList'
 import './TopNews.css'
 
@@ -7,7 +8,7 @@ TopNews.propTypes = {}
 function TopNews(props) {
     return (
         <section id="section" className="section-topstory">
-            <h2>Top News</h2>
+            <h2>TOP TIN TỨC</h2>
             <div className="topstory__container">
                 <div className="topstory-left">
                     <div className="topstory-left__img">
@@ -17,7 +18,11 @@ function TopNews(props) {
                         />
                     </div>
                     <div className="topstory-left__content">
-                        <h3>Hà Lan - Qatar: Gakpo trước cột mốc đáng nhớ</h3>
+                        <h3>
+                            <Link to={`/news/2`}>
+                                Hà Lan - Qatar: Gakpo trước cột mốc đáng nhớ
+                            </Link>
+                        </h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
                             temporibus excepturi eaque possimus at quis consectetur
@@ -28,7 +33,12 @@ function TopNews(props) {
                     </div>
                 </div>
                 <div className="topstory-right">
-                    <BlogList />
+                    <BlogList end={3} />
+                    <div className="see-more">
+                        <button className="btn-see-more">
+                            <Link to="news">Xem thêm</Link>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

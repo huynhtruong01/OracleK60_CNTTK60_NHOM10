@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #eff5f5;
 }
 
 a {
@@ -42,4 +47,8 @@ img {
 
 h3 {
     cursor: pointer;
+}
+
+p {
+    line-height: 1.4;
 }

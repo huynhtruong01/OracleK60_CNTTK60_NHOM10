@@ -1,0 +1,42 @@
+.blog {
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: calc(100% / 3 - 16px);
+}
+
+.blog__img {
+    margin-bottom: 6px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog__content {
+    padding: 8px 12px 12px;
+}
+
+.blog__title {
+    margin-bottom: 6px;
+}
+
+.blog__title:hover a {
+    text-decoration: underline;
+    color: #0d4c92;
+}
+
+.blog__desc {
+    font-size: 14px;
+    color: #00000099;
+}
+
+.blog__time-category {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.blog__time-category .time {
+    color: #000000cc;
+}

@@ -22,3 +22,8 @@
 .stories-news__right {
     padding-left: 20px;
 }
+
+.stories-news-see-more {
+    margin-top: 12px;
+    text-align: center;
+}

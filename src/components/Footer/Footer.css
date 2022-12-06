@@ -1,0 +1,23 @@
+.footer {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.footer__menu-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__menu-item {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.footer__menu-item a {
+    color: #404258;
+    transition: 0.2s ease-in-out;
+}
+
+.footer__menu-item:hover a {
+    color: #000;
+}
