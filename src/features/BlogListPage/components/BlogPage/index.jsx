@@ -4,12 +4,9 @@ import { Link } from 'react-router-dom'
 import categoriesApi from '../../../../api/categoriesApi'
 import { formatTimes } from '../../../../utils/time'
 import './BlogPage.css'
-
 BlogPage.propTypes = {}
-
 function BlogPage({ blog }) {
     const [category, setCategory] = useState('')
-
     useEffect(() => {
         ;(async () => {
             const newCategory = await categoriesApi.getCategory(blog.category_id)
@@ -35,5 +32,4 @@ function BlogPage({ blog }) {
         </div>
     )
 }
-
 export default BlogPage
