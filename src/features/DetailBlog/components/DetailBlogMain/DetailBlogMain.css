@@ -18,3 +18,9 @@
     letter-spacing: 1px;
     line-height: 2;
 }
+
+.detail-blog-view-post {
+    margin-top: 60px;
+    text-align: right;
+    color: #928686;
+}

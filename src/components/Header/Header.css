@@ -83,3 +83,8 @@
     width: 32px;
     height: 32px;
 }
+
+.logo {
+    font-weight: 600;
+    text-transform: uppercase;
+}

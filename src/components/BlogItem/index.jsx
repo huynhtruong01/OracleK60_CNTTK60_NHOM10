@@ -13,7 +13,7 @@ function BlogItem({ blog }) {
     useEffect(() => {
         ;(async () => {
             const category = await categoriesApi.getCategory(blog.category_id)
-            setCategory(category)
+            setCategory(category.category_name)
         })()
     }, [])
 
@@ -26,10 +26,10 @@ function BlogItem({ blog }) {
                 <h3 className="blog-item__title">
                     <Link to={`/news/${blog.id}`}>{blog.title}</Link>
                 </h3>
-                <p className="blog-item__description">{blog.content_post}</p>
+                <p className="blog-item__description">{blog.brief}</p>
                 <div className="blog-item__times-category">
                     <span className="category">{category}</span>
-                    <span>{formatTimes('2022-12-04T19:27:51.000+00:00')}</span>
+                    <span>{formatTimes(blog.date_public)}</span>
                 </div>
             </div>
         </article>

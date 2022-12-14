@@ -2,7 +2,7 @@
     padding: 12px;
     border-radius: 5px;
     background-color: #fff;
-    width: calc(100% / 3 - 16px);
+    width: calc(100% / 3 - 11px);
 }
 
 .blog__img {

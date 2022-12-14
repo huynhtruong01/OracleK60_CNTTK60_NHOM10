@@ -4,6 +4,8 @@ const axiosClient = axios.create({
     baseURL: 'http://localhost:8000/api',
     headers: {
         'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
     },
 })
 
@@ -20,7 +22,7 @@ axiosClient.interceptors.request.use(
 // Add a response interceptor
 axiosClient.interceptors.response.use(
     function (response) {
-        return response
+        return response.data
     },
     function (error) {
         return Promise.reject(error)
