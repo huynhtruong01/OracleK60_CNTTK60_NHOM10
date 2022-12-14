@@ -13,7 +13,7 @@ function BlogPage({ blog }) {
     useEffect(() => {
         ;(async () => {
             const newCategory = await categoriesApi.getCategory(blog.category_id)
-            setCategory(newCategory)
+            setCategory(newCategory.category_name)
         })()
     }, [])
 
@@ -24,13 +24,13 @@ function BlogPage({ blog }) {
             </div>
             <div className="blog__content">
                 <div className="blog__time-category">
-                    <span className="category">The thao</span>
+                    <span className="category">{category}</span>
                     <span className="time">{formatTimes(blog.date_public)}</span>
                 </div>
                 <h3 className="blog__title">
                     <Link to={`/news/${blog.id}`}>{blog.title}</Link>
                 </h3>
-                <p className="blog__desc">{blog.content_post}</p>
+                <p className="blog__desc">{blog.brief}</p>
             </div>
         </div>
     )

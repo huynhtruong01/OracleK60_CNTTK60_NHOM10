@@ -9,3 +9,9 @@
     gap: 16px;
     padding: 12px 0;
 }
+
+.filter {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}

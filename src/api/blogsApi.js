@@ -9,6 +9,10 @@ const blogsApi = {
         const url = `/news/${id}`
         return axiosClient.get(url)
     },
+    increaseView(id) {
+        const url = `/news/increase/post_id=${id}`
+        return axiosClient.put(url)
+    },
 }
 
 export default blogsApi

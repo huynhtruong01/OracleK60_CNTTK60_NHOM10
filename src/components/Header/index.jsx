@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { formatFullTimes } from '../../utils/time'
 import './Header.css'
 
@@ -8,12 +9,13 @@ function Header() {
     return (
         <header id="header">
             <div className="container header__container">
-                <a href="">
-                    <img
+                <Link to="">
+                    {/* <img
                         src="https://s1.vnecdn.net/vnexpress/restruct/i/v681/v2_2019/pc/graphics/logo.svg"
                         alt=""
-                    />
-                </a>
+                    /> */}
+                    <span className="logo">NEWSVNs</span>
+                </Link>
                 <span className="header__time-now">{formatFullTimes(new Date())}</span>
                 <div className="header__right">
                     <div className="header__social-list">
